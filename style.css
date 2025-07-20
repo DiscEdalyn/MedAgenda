@@ -1,0 +1,662 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    font-family: Lexend;
+}
+
+/* Estilos para el topbar */
+.topbar {
+    background-color: aliceblue;
+    color: #1168AF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnagendar{
+    padding: 10px;
+    background-color: #1168AF;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.topbar .left, .topbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .left i, .topbar .right i {
+    margin-right: 10px;
+}
+
+.topbar .left span { 
+    margin-right: 20px; /* Espacio entre la dirección y el horario */ 
+}
+
+.topbar .right a {
+    color: #1168AF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.topbar .right span { 
+    margin-right: 20px; /* Espacio entre la dirección y el horario */ 
+}
+
+.topbar .right a:hover {
+    color: #1168AF;
+}
+
+.logo {
+    height: auto;
+    width: 200px; 
+}
+
+/* Estilos para la navbar */
+.navbar {
+    background-color: aliceblue;
+}
+
+.navbar .navbar-brand {
+    height: 70px;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto; 
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #1168AF !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #0a3a62 !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: aliceblue;
+}
+
+.navbar .btnagendar {
+    background-color: #1168AF !important;
+    border-color: #1168AF !important;
+    color: aliceblue !important;
+}
+
+.navbar .btnagendar:hover {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+}
+
+/* Estilos para el header */
+.header {
+    position: relative;
+    border-color: #1168AF !important;
+    background-color: #1168AF !important;
+    
+}
+
+.header .header-carousel .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .header-carousel .owl-carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #1168AF;
+}
+
+.border-light {
+    border-color: #f8f9fa !important;
+}
+
+.header .text-white {
+    color: #ffffff !important;
+   /* font-family: 'Roboto', sans-serif;*/
+}
+
+.header .text-light {
+    color: #f8f9fa !important;
+   /* font-family: 'Roboto', sans-serif;*/
+}
+
+.header .display-4 {
+    font-size: 7rem;
+   /* font-family: 'Roboto', sans-serif;*/
+}
+
+.header .display-1 {
+    font-size: 10rem;
+ /*   font-family: 'Roboto', sans-serif;*/
+}
+
+
+/* Estilos para las flechas del carrusel */ 
+.owl-nav { 
+    position: absolute; 
+    top: 50%; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    transform: translateY(-50%); 
+}
+
+.owl-nav button { 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 50%; 
+    transition: background 0.3s; 
+}
+
+.owl-nav button:hover { 
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.owl-nav button i { 
+    font-size: 20px; 
+}
+
+/* Estilos para la sección de servicios */
+.container-xxl {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.service-item {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura que todos los elementos tengan la misma altura */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item .bg-white {
+    background-color: #ffffff;
+}
+
+.service-item .text-primary {
+    color: #1168AF !important;
+}
+
+.service-item .btn {
+    color: #1168AF !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    margin-top: auto; /* Alinea el botón al final del contenedor */
+}
+
+.service-item .btn:hover {
+    color: #0056b3 !important;
+}
+
+.service-item .rounded-circle {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.service-item h4 {
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible */
+}
+
+.service-item i {
+    font-size: 1.5rem;
+    margin-right: 10px; /* Añade espacio entre el icono y el texto */
+}
+
+/* Estilos para la sección de testimonios */
+.container-xxl {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.testimonial-carousel .testimonial-item {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-carousel .testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-carousel .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 10px solid #1168AF ; /* Añade un contorno circular azul */
+}
+
+.testimonial-carousel .testimonial-text {
+    background-color: #1168AF !important; /* Fondo azul para el cuadro de texto */
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.testimonial-carousel .testimonial-text p {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.testimonial-carousel .testimonial-text h5 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.testimonial-carousel .testimonial-text span {
+    font-style: italic;
+    color: #d1e7ff !important; /* Texto en un tono más claro de azul */
+}
+
+.bg-dark{background-color:#1168AF !important}
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1168AF ;
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.footer p, .footer a {
+    color: #d1e7ff;
+    margin-bottom: 1rem;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .btn-social:hover {
+    background-color: #1168AF;
+    color: #ffffff;
+}
+
+.footer .form-control {
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer .btn-primary {
+    background-color: #1168AF;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.footer .copyright {
+    border-top: 1px solid #d1e7ff;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.footer .border-bottom {
+    border-bottom: 1px solid #d1e7ff;
+    padding-bottom: 0.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .border-bottom:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Distribuir las columnas a lo ancho de la página */
+.footer .row.g-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .col-lg-3, .footer .col-md-6 {
+    flex: 1;
+    min-width: 200px; 
+    margin-bottom: 1.5rem;
+}
+/* INDEX END*/
+
+/* Estilos generales */
+body {
+    margin: 0;
+    /*font-family: Arial, sans-serif;*/
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen de perfil */
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #1168AF;
+}
+
+.profile-img input[type="file"] {
+    display: none;
+}
+
+.profile-img label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #1168AF;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* Estilos para la información personal */
+.personal-info h3 {
+    color: #1168AF;
+}
+
+.personal-info p {
+    margin: 0.5rem 0;
+}
+
+/* Estilos para las citas programadas */
+.appointments h3 {
+    color: #1168AF;
+    margin-bottom: 1rem;
+}
+
+.appointments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointments th, .appointments td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.appointments th {
+    background-color: #1168AF;
+    color: #ffffff;
+}
+
+/* Estilos para la encuesta de satisfacción */
+.survey h3 {
+    color: #1168AF;
+    margin-bottom: 1rem;
+}
+
+.survey .form-group {
+    margin-bottom: 1rem;
+}
+
+.survey .form-control {
+    border: 1px solid #1168AF;
+    border-radius: 0.25rem;
+}
+
+.survey .btn-primary {
+    background-color: #1168AF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.survey .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Encuesta*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 10000;
+}
+.popup.active {
+    display: block;
+}
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup-header h3 {
+    margin: 0;
+}
+        .popup-close {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 2em;
+            color: #ddd;
+            cursor: pointer;
+        }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5b301;
+        }
+/* LOGIN */
+/* Contenedor del formulario de inicio de sesion */
+.login-container {
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.login-container h3{
+    font-size: 15px;
+}
+
+
+/* Títulos */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Etiquetas */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 500;
+    margin-left: 20%;
+    font-size: 18px;
+}
+
+/* Campos de entrada */
+.login-container input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1168AF;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.login-container .button {
+    width: 40%;
+    padding: 10px;
+    background-color: #1168AF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.login-container .button:hover {
+    background-color: #0e5690;
+}
+/* Contenedor del formulario */
+.register-container {
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+.register-container {
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* contenedor del formulario de registro de pacientes */
+/* Contenedor del formulario */
+.register-container {
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formregistro {
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* Títulos */
+.formregistro h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Etiquetas */
+.formregistro label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 500;
+    margin-left: 20%;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Campos de entrada */
+.formregistro input, 
+.formregistro select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1168AF;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.formregistro .button {
+    width: 40%;
+    padding: 10px;
+    background-color: #1168AF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.formregistro .button:hover {
+    background-color: #0e5690;
+}
